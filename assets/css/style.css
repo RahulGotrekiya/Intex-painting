@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1650px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: unset;
+  z-index: 9;
+}
+
+.full-container {
+  padding: 0 37px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.header-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.header-menu ul li {
+  padding: 0 43px;
+}
+
+.header-menu ul li a {
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.header-contact {
+  padding: 0 25px 0 110px;
+}
+
+/* .header-contact::after {
+  content: "";
+  width: 200px;
+  border: 1px solid #ffff;
+  border-radius: 100%;
+  transform: translate(-50%);
+} */
+
+/* hero */
+
+.hero-section {
+  position: relative;
+}
+
+.hero-section img {
+  width: 100%;
+}
+
+.hero-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  color: #ffff;
+}
+
+.hero-text h6 {
+  padding: 25px 0;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 17px;
+  line-height: 1.1;
+}
+
+.hero-text h1 {
+  padding: 10px 0;
+  font-size: 100px;
+  font-weight: 500;
+  letter-spacing: 17px;
+  line-height: 1.1;
+}
+
+/* Body text */
+
+.body-text {
+  padding: 130px 0;
+}
+
+.text-row {
+  font-size: 22px;
+  padding: 0 220px;
+  text-align: center;
+}
+
+/* Services */
+
+.services-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-box {
+  position: relative;
+}
+
+.services-text {
+  width: 100%;
+  position: absolute;
+  top: 53%;
+  transform: translate(0, -50%);
+  text-align: center;
+  color: #ffff;
+}
+
+.services-text h3 {
+  padding-top: 20px;
+  font-size: 33px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 1.1;
+}
+
+.services-text h2 {
+  padding: 0 12px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  display: inline-block;
+  color: #314857;
+  background-color: #ffff;
+}
+
+.services-text p {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.5;
+}
+
+/* Your Painting */
+
+.painting-img img {
+  width: 100%;
+}
+
+.your-painting {
+  position: relative;
+}
+
+.painting-content {
+  padding: 130px 220px 235px;
+  width: 100%;
+  color: #ffff;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translate(0, -50%);
+}
+
+.painting-text {
+  padding-bottom: 90px;
+}
+
+.painting-text h3 {
+  font-size: 33px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  line-height: 1.1;
+}
+
+.painting-text h2 {
+  font-weight: 600;
+}
+
+.checkbox-row {
+  padding-bottom: 90px;
+}
+
+.checkbox-row ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.checkbox-row ul li {
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+
+.checkbox-row ul input {
+  position: absolute;
+  appearance: none;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ffff;
+  background-color: #ffff;
+  transition: 0.2s all linear;
+}
+
+.checkbox-row ul input:checked {
+  background-color: #27576e;
+  border: 6px solid #fff;
+}
+
+.checkbox-row ul li label {
+  font-size: 15px;
+  display: block;
+  padding: 60px 75px 0;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.main-form-row {
+  padding-bottom: 90px;
+}
+
+.main-form-row .main-form {
+  display: flex;
+  padding-bottom: 55px;
+  justify-content: space-between;
+}
+
+.main-form .form-tile {
+  width: 27%;
+}
+
+.main-form-row .form-tile {
+}
+
+.main-form-row .main-form input,
+.main-form-row textarea {
+  width: 100%;
+  padding: 30px 25px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  background-color: transparent;
+  border: 0px solid #fff;
+  letter-spacing: 1.7px;
+  border-bottom: 1px solid #4f6872;
+  outline: none;
+}
+
+.main-form-row textarea {
+  height: 100px;
+}
+
+.main-form-row input::placeholder,
+.main-form-row textarea::placeholder {
+  color: #fff;
+}
+
+.request-btn input[type="submit"] {
+  padding: 22px 55px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #193946;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* Gallery */
+
+.gallery-section {
+  padding-top: 90px;
+}
+
+.gallery-text {
+  text-align: center;
+  position: relative;
+  top: 28px;
+}
+
+.gallery-text h2 {
+  font-weight: 600;
+  color: #193541;
+}
+
+.gallery-section h3 {
+  display: inline-block;
+  font-size: 33px;
+  padding: 15px 50px 40px;
+  font-weight: 400;
+  background-color: #fff;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.gallery-text h3 a {
+  color: #314857;
+}
+
+.image-gallery .images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: space-between;
+}
+
+.image-gallery .images img {
+  width: 230px;
+}
+
+/* Footer */
+
+.footer-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-row .footer-col {
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+
+.footer-row .footer-contact {
+  padding-top: 150px;
+}
+
+.footer-contact img {
+  padding-bottom: 30px;
+}
+
+.footer-col h4 a {
+  font-size: 24px;
+  color: #314857;
+  letter-spacing: 6px;
+  line-height: 1.6;
+}
+
+.footer-contact p a {
+  font-size: 21px;
+  color: #6c6c6c;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.col-center .brush-content {
+  width: 100%;
+  position: absolute;
+  top: 92px;
+}
+
+.brush-content .brush-logo img {
+  width: 203px;
+}
+
+.brush-content .social-icon img {
+  padding: 37px 0 25px;
+}
+
+.brush-content .brush-text p,
+.brush-content .brush-text p a {
+  font-size: 13px;
+  color: #fff;
+}
