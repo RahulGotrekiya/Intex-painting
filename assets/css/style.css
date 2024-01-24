@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 
 .container {
@@ -15,6 +16,10 @@
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  color: #bab4af;
 }
 
 p {
@@ -77,6 +82,10 @@ header {
   letter-spacing: 8px;
 }
 
+.header-menu ul li a:hover {
+  color: #bab4af;
+}
+
 .header-contact {
   margin: 0 25px 0 110px;
   position: relative;
@@ -93,8 +102,8 @@ header {
   opacity: 0.1;
   position: absolute;
   border-radius: 100%;
-  animation: phone 1s linear infinite;
-  animation-delay: 0.3s;
+  /* animation: phone 1s linear infinite;
+  animation-delay: 3s; */
 }
 
 .header-contact a {
@@ -104,6 +113,7 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 
 .header-contact a::after {
@@ -113,8 +123,8 @@ header {
   border: 1px solid #d8d8d8;
   position: absolute;
   border-radius: 100%;
-  animation: phone 1s linear infinite;
-  animation-delay: 0.3s;
+  /* animation: phone 1s linear infinite;
+  animation-delay: 1s; */
 }
 
 .header-contact::after {
@@ -125,13 +135,12 @@ header {
   opacity: 0.23;
   position: absolute;
   border-radius: 100%;
-  animation: phone 1s linear infinite;
-  animation-delay: 0.3s;
+  /* animation: phone 1s linear infinite;
+  animation-delay: 2s; */
 }
 
 .header-contact a:hover {
-  animation: phone 1s linear infinite;
-  animation-delay: 0.3s;
+  filter: brightness(0.6);
 }
 
 /* hero */
@@ -282,6 +291,36 @@ header {
   list-style: none;
 }
 
+.bg-brush {
+  position: absolute;
+  overflow: hidden;
+  height: 47px;
+  left: 50%;
+  width: 185px;
+  transform: translateX(-50%);
+  top: 1px;
+  transform-origin: left center;
+  right: 0;
+  margin: 0 auto;
+}
+
+.bg-brush::after {
+  content: "";
+  background: url("/assets/images/radio-bg.png");
+  background-position: center left;
+  background-size: 184px 45px;
+  width: 0;
+  height: 100%;
+  display: block;
+  transition: 0.5s all;
+}
+
+/* .checkbox-row ul li:hover {
+  background-image: url("/assets/images/radio-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+} */
+
 .checkbox-row ul input {
   position: absolute;
   appearance: none;
@@ -292,6 +331,7 @@ header {
   border: 2px solid #ffff;
   background-color: #ffff;
   transition: 0.2s all linear;
+  z-index: 9;
 }
 
 .checkbox-row ul input:checked {
@@ -299,12 +339,37 @@ header {
   border: 6px solid #fff;
 }
 
+.checkbox-row ul input:checked ~ label .bg-brush::after {
+  width: 100%;
+}
+
 .checkbox-row ul li label {
   font-size: 15px;
   display: block;
-  padding: 60px 75px 0;
+  padding: 60px 85px 0;
   line-height: 1.4;
+  cursor: pointer;
   letter-spacing: 1px;
+}
+
+.checkbox-row ul li:nth-child(1):after {
+  content: "";
+  width: 1px;
+  height: 90%;
+  background-color: #4d646f;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.checkbox-row ul li:nth-child(2)::before {
+  content: "";
+  width: 1px;
+  height: 90%;
+  background-color: #4d646f;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .main-form-row {
@@ -337,6 +402,7 @@ header {
 
 .main-form-row textarea {
   height: 100px;
+  resize: none;
 }
 
 .main-form-row input::placeholder,
@@ -353,6 +419,17 @@ header {
   color: #193946;
   text-transform: uppercase;
   letter-spacing: 4px;
+  cursor: pointer;
+}
+
+.request-btn input[type="submit"]:hover {
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  color: #fff;
+}
+
+.request-btn input[type="submit"]:active {
+  transform: scale(0.96);
 }
 
 /* Gallery */
@@ -386,6 +463,10 @@ header {
   color: #314857;
 }
 
+.gallery-text h3 a:hover {
+  color: #376689;
+}
+
 .image-gallery .images {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -400,7 +481,7 @@ header {
 /* Footer */
 
 .footer-row {
-  padding-bottom: 230px;
+  padding-bottom: 225px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -435,6 +516,10 @@ header {
   font-weight: 500;
 }
 
+.footer-contact p a:hover {
+  color: #314857;
+}
+
 .brush-img img {
   position: absolute;
   transform: translate(-50%, 0);
@@ -458,6 +543,10 @@ header {
 .brush-content .brush-text p a {
   font-size: 13px;
   color: #fff;
+}
+
+.brush-content .brush-text p a:hover {
+  color: #bab4af;
 }
 
 /* Footer navbar */
@@ -503,21 +592,19 @@ header {
   color: #000;
 }
 
+.footer-nav-right p a:hover,
+.footer-nav-left ul li a:hover {
+  color: #376689;
+}
+
 /* Animation Keyframes... */
 
-/* @keyframes phone {
+@keyframes phone {
   0% {
     transform: scale(0.5);
-    opacity: 0;
-  }
-
-  50% {
-    transform: scale(1);
-    opacity: 1;
   }
 
   100% {
-    transform: scale(1.3);
-    opacity: 0;
+    transform: scale(1);
   }
-} */
+}

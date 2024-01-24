@@ -29,7 +29,7 @@
                     </nav>
                 </div>
                 <div class="header-contact">
-                    <a href="tel:+1(705) 205-1115"><img src="assets/images/Phone.png" alt="Phone" /></a>
+                    <a href="tel:+1(705) 205-1115"><img src="assets/images/Phone.png" alt="Phone"></a>
                 </div>
             </div>
         </div>
@@ -124,40 +124,46 @@
                             <ul>
                                 <li>
                                     <input type="radio" id="Choice01" checked name="radio">
-                                    <label for="Choice01">New Construction</label>
+                                    <label for="Choice01">New Construction
+                                        <div class="bg-brush"></div>
+                                    </label>
                                 </li>
                                 <li>
                                     <input type="radio" id="Choice02" name="radio">
-                                    <label for="Choice02">Home & Cottage Re-Paint</label>
+                                    <label for="Choice02">Home & Cottage Re-Paint
+                                        <div class="bg-brush"></div>
+                                    </label>
                                 </li>
                                 <li>
                                     <input type="radio" id="Choice03" name="radio">
-                                    <label for="Choice03">Shop Finishing</label>
+                                    <label for="Choice03">Shop Finishing
+                                        <div class="bg-brush"></div>
+                                    </label>
                                 </li>
                             </ul>
                         </div>
-                        <div class="main-form-row">
-                            <form>
+                        <form>
+                            <div class="main-form-row">
                                 <div class="main-form">
                                     <div class="form-tile">
-                                        <input type="text" name="yourname" placeholder="Your Name">
+                                        <input type="text" name="yourname" placeholder="Your Name" required>
                                     </div>
                                     <div class="form-tile">
-                                        <input type="text" name="phone" placeholder="Phone">
+                                        <input type="tel" name="phone" placeholder="Phone" required>
                                     </div>
                                     <div class="form-tile">
-                                        <input type="text" name="email" placeholder="Email">
+                                        <input type="email" name="email" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="form-tile">
                                     <textarea name="about-needs" placeholder="Tell us more about your painting needs…"
                                         cols="50" rows="10"></textarea>
                                 </div>
-                            </form>
-                        </div>
-                        <div class="request-btn">
-                            <input type="submit" value="Send request">
-                        </div>
+                            </div>
+                            <div class="request-btn">
+                                <input type="submit" value="Send request">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -218,7 +224,7 @@
                         </div>
                         <div class="brush-content">
                             <div class="brush-logo">
-                                <img src="assets/images/logo.png" alt="">
+                                <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
                             </div>
                             <div class="social-icon">
                                 <a href="https://www.instagram.com/intexpaintingco/" target="_blank"><img
