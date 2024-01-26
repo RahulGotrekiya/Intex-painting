@@ -53,3 +53,109 @@
     padding: 15px 40px 25px;
   }
 }
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    max-width: 1170px;
+  }
+
+  .logo img,
+  .brush-content .brush-logo img {
+    width: 160px;
+  }
+
+  .header-menu ul li a {
+    font-size: 14px;
+  }
+
+  .header-contact a {
+    height: 40px;
+    width: 40px;
+  }
+
+  .header-contact img {
+    width: inherit;
+  }
+
+  .hero-text h1 {
+    font-size: 70px;
+  }
+
+  .hero-text h6 {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .text-row {
+    font-size: 15px;
+  }
+
+  .body-text {
+    padding: 80px 0;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .services-text h3 {
+    font-size: 20px;
+  }
+
+  .services-text p {
+    font-size: 12px;
+  }
+
+  .painting-text h3 {
+    font-size: 20px;
+  }
+
+  .checkbox-row,
+  .painting-text,
+  .main-form-row {
+    padding-bottom: 40px;
+  }
+
+  .request-btn input[type="submit"] {
+    font-size: 14px;
+  }
+
+  .checkbox-row ul li label {
+    padding: 60px 45px 0;
+  }
+
+  .checkbox-row ul li:nth-child(2)::before,
+  .checkbox-row ul li:nth-child(1):after {
+    height: 80%;
+  }
+
+  .main-form-row .main-form {
+    padding-bottom: 45px;
+  }
+
+  .gallery-section {
+    padding-top: 80px;
+  }
+
+  .gallery-section h3 {
+    font-size: 20px;
+    padding: 15px 37px 20px;
+  }
+
+  .footer-col h4 a {
+    font-size: 20px;
+  }
+
+  .footer-contact p a {
+    font-size: 18px;
+  }
+
+  .footer-navbar {
+    padding: 26px px 0 28px;
+  }
+
+  .footer-nav-left ul li a,
+  .footer-nav-right p {
+    font-size: 14px;
+  }
+}
