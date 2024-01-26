@@ -1,0 +1,55 @@
+@media only screen and (max-width: 1600px) {
+  .container {
+    max-width: 1360px;
+  }
+
+  .logo img,
+  .brush-content .brush-logo img {
+    width: 175px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 80px;
+  }
+
+  .hero-text h6 {
+    font-size: 23px;
+  }
+
+  .text-row {
+    font-size: 20px;
+  }
+
+  .body-text {
+    padding: 100px 0;
+  }
+
+  .painting-content {
+    padding: 100px;
+  }
+
+  .services-text h3 {
+    font-size: 25px;
+  }
+
+  .services-text h2 {
+    margin-bottom: 20px;
+  }
+
+  .your-painting {
+    padding: 100px 100px;
+  }
+
+  .painting-text h3 {
+    font-size: 23px;
+  }
+
+  .gallery-section h3 {
+    font-size: 23px;
+    padding: 15px 40px 25px;
+  }
+}

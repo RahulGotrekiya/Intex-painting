@@ -192,14 +192,21 @@ header {
 /* Services */
 
 .services-row {
+  margin-bottom: 4px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .services-box {
   position: relative;
+  width: 33.15%;
+  background-color: #0d2839;
+}
+
+.services-box img {
+  display: block;
+  width: 100%;
 }
 
 .services-text {
@@ -242,21 +249,21 @@ header {
 }
 
 .your-painting {
-  position: relative;
-}
-
-.painting-content {
-  padding: 130px 220px 235px;
+  background-image: url("/assets/images/Your-painting.png");
+  background-position: center bottom;
   width: 100%;
+  height: auto;
+  max-height: 1064px;
+  padding: 125px 220px 220px;
   color: #ffff;
-  position: absolute;
-  top: 50%;
+  position: relative;
   text-align: center;
-  transform: translate(0, -50%);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .painting-text {
-  padding-bottom: 90px;
+  padding-bottom: 75px;
 }
 
 .painting-text h3 {
@@ -271,7 +278,7 @@ header {
 }
 
 .checkbox-row {
-  padding-bottom: 90px;
+  padding-bottom: 80px;
 }
 
 .checkbox-row ul {
