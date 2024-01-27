@@ -144,6 +144,10 @@ header {
   filter: brightness(0.6);
 }
 
+.hamburger {
+  display: none;
+}
+
 /* hero */
 
 .hero-section {
@@ -339,7 +343,7 @@ header {
   border: 2px solid #ffff;
   background-color: #ffff;
   transition: 0.2s all linear;
-  z-index: 9;
+  z-index: 8;
 }
 
 .checkbox-row ul input:checked {

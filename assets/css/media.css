@@ -192,11 +192,13 @@
 
   .hero-text h1 {
     font-size: 45px;
+    letter-spacing: 15px;
   }
 
   .hero-text h6 {
     font-size: 17px;
     padding: 15px 0;
+    letter-spacing: 14px;
   }
 
   .text-row {
@@ -303,5 +305,101 @@
 
   .footer-navbar {
     padding: 22px 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header-menu {
+    position: fixed;
+    background-color: #0a1f32;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    right: -40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-menu ul li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .header-menu ul li a {
+    font-size: 16px;
+  }
+
+  .hamburger {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+
+  .hamburger .line:nth-child(1),
+  .hamburger .line:nth-child(3),
+  .hamburger .line:nth-child(2) {
+    background-color: #fff;
+  }
+
+  .hamburger.isactive .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.isactive .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.isactive .line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .header-menu.active {
+    right: 0;
+    transition: 0.5s;
+  }
+
+  .header-contact.active {
+    left: 10%;
+  }
+
+  .header-content {
+    padding: 18px 0;
+  }
+
+  .full-container {
+    padding: 0 30px;
+  }
+
+  .header-contact {
+    margin: 0;
+    left: 280px;
+    transition: 0.5s;
+    position: relative;
+  }
+
+  .header-contact::after,
+  .header-contact a::after,
+  .header-contact::before {
+    display: none;
+  }
+
+  .header-menu ul li a {
+    letter-spacing: 5px;
   }
 }
