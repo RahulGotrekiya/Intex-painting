@@ -736,6 +736,10 @@
     width: 100%;
   }
 
+  .painting-text h3 {
+    padding-bottom: 3px;
+  }
+
   h2 {
     letter-spacing: 4px;
   }
@@ -840,4 +844,80 @@
   .col-center .brush-content {
     top: 110px;
   }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 300px;
+  }
+
+  .header-contact {
+    right: 18%;
+  }
+
+  .header-menu.active {
+    width: 80%;
+  }
+
+  .header-contact.active {
+    right: 58%;
+  }
+
+  .hero-text h1 br {
+    display: none;
+  }
+
+  .hero-text h1 {
+    font-size: 25px;
+  }
+
+  .hero-text h6 {
+    font-size: 10px;
+  }
+
+  .text-row {
+    font-size: 10px;
+    padding: 0 4px;
+  }
+
+  .body-text {
+    padding: 30px 0;
+  }
+
+  .text-row {
+    font-size: 13px;
+  }
+
+  .checkbox-row,
+  .painting-text,
+  .main-form-row {
+    padding-bottom: 30px;
+  }
+
+  .main-form-row .main-form input,
+  .main-form-row textarea {
+    padding: 13px 16px;
+    font-size: 14px;
+  }
+
+  .main-form .form-tile:last-child {
+    padding-bottom: 15px;
+  }
+
+  .main-form .form-tile {
+    padding-bottom: 20px;
+  }
+
+  .main-form .form-tile:last-child {
+    padding-bottom: 20px;
+  }
+
+  .request-btn input[type="submit"] {
+    padding: 10px 25px;
+  }
+
+  .footer-nav-left ul {
+    justify-content: center;
+  }
+
 }
