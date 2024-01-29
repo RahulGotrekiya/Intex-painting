@@ -254,7 +254,7 @@ header {
 }
 
 .your-painting {
-  background-image: url("/assets/images/Your-painting.png");
+  background-image: url("../images/your-painting.png");
   background-position: center bottom;
   width: 100%;
   height: auto;
@@ -318,7 +318,7 @@ header {
 
 .bg-brush::after {
   content: "";
-  background: url("/assets/images/radio-bg.png");
+  background: url("../images/radio-bg.png");
   background-position: center left;
   background-size: 184px 45px;
   width: 0;
