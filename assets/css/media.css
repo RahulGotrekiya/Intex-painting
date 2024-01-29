@@ -685,3 +685,159 @@
     right: 28%;
   }
 }
+
+@media only screen and (max-width: 640px) {
+  .container {
+    max-width: 420px;
+  }
+
+  .logo img,
+  .brush-content .brush-logo img {
+    width: 100px;
+  }
+
+  .hero-section img {
+    height: 355px;
+    object-fit: cover;
+  }
+
+  .full-container {
+    padding: 0 18px;
+  }
+
+  .header-contact img {
+    width: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+    letter-spacing: 6px;
+  }
+
+  .hero-text h6 {
+    font-size: 8px;
+    letter-spacing: 8px;
+  }
+
+  .text-row {
+    font-size: 11px;
+  }
+
+  .body-text {
+    padding: 40px 0;
+  }
+
+  .services-row {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .services-box {
+    width: 100%;
+  }
+
+  h2 {
+    letter-spacing: 4px;
+  }
+
+  .checkbox-row ul {
+    flex-direction: column;
+  }
+
+  .checkbox-row ul li:nth-child(2):after {
+    display: none;
+  }
+
+  .checkbox-row ul li {
+    width: 100%;
+  }
+
+  .checkbox-row,
+  .painting-text,
+  .main-form-row {
+    padding-bottom: 20px;
+  }
+
+  .your-painting {
+    padding: 55px 20px;
+  }
+
+  .main-form-row .main-form input {
+    padding: 13px 16px;
+  }
+
+  .main-form-row textarea {
+    height: 80px;
+    padding: 20px 16px;
+  }
+
+  .main-form .form-tile:last-child {
+    padding-bottom: 8px;
+  }
+
+  .request-btn input[type="submit"] {
+    font-size: 11px;
+  }
+
+  .gallery-text h2 br {
+    display: none;
+  }
+
+  .image-gallery .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-gallery .images img:nth-child(2) {
+    grid-column: unset;
+  }
+
+  .gallery-text {
+    position: relative;
+    left: 0;
+    top: 27px;
+    transform: unset;
+  }
+
+  .gallery-section {
+    padding-top: 20px;
+  }
+
+  .gallery-section h3 {
+    font-size: 15px;
+    padding: 12px 18px 13px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .footer-row .footer-contact,
+  .footer-row .col-center {
+    padding-top: 40px;
+  }
+
+  .footer-row .footer-col {
+    width: 100%;
+  }
+
+  .footer-row .col-center {
+    order: 2;
+  }
+
+  .brush-img img {
+    position: static;
+    transform: unset;
+    width: 220px;
+  }
+
+  .footer-col h4 a {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+  .col-center .brush-content {
+    top: 110px;
+  }
+}

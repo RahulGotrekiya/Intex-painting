@@ -346,12 +346,16 @@ header {
   z-index: 8;
 }
 
+.checkbox-row ul input:hover {
+  cursor: pointer;
+}
+
 .checkbox-row ul input:checked {
   background-color: #27576e;
   border: 6px solid #fff;
 }
 
-.checkbox-row ul input:checked ~ label .bg-brush::after {
+.checkbox-row ul input:checked~label .bg-brush::after {
   width: 100%;
 }
 
