@@ -364,7 +364,8 @@ header {
   letter-spacing: 1px;
 }
 
-.checkbox-row ul li:nth-child(1):after {
+.checkbox-row ul li:nth-child(2):after,
+.checkbox-row ul li:nth-child(2)::before {
   content: "";
   width: 1px;
   height: 90%;
@@ -374,14 +375,8 @@ header {
   bottom: 0;
 }
 
-.checkbox-row ul li:nth-child(2)::before {
-  content: "";
-  width: 1px;
-  height: 90%;
-  background-color: #4d646f;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.checkbox-row ul li:nth-child(2):after {
+  left: 0;
 }
 
 .main-form-row {
