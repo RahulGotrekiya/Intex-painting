@@ -248,7 +248,7 @@
   }
 
   .gallery-section {
-    padding-top: 30px;
+    padding-top: 80px;
   }
 
   .request-btn input[type="submit"] {
@@ -256,7 +256,7 @@
   }
 
   .gallery-section h3 {
-    font-size: 18px;
+    font-size: 23px;
     padding: 12px 25px 15px;
   }
 
@@ -305,6 +305,33 @@
 
   .footer-navbar {
     padding: 22px 0;
+  }
+
+  .project-gallery {
+    position: relative;
+  }
+
+  .image-gallery .images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .image-gallery .images img:nth-child(2) {
+    grid-column: 4 / 5;
+  }
+
+  .gallery-text {
+    left: 50%;
+    top: 11%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+
+  .gallery-text h2 {
+    line-height: 1.5;
+  }
+
+  .gallery-text h2 br {
+    display: block;
   }
 }
 
@@ -375,7 +402,8 @@
   }
 
   .header-contact.active {
-    left: 10%;
+    /* left: 10%; */
+    right: 31%;
   }
 
   .header-content {
@@ -386,11 +414,20 @@
     padding: 0 30px;
   }
 
-  .header-contact {
+  /* .header-contact {
     margin: 0;
     left: 280px;
     transition: 0.5s;
     position: relative;
+  } */
+
+  .header-contact {
+    margin: 0;
+    top: 50%;
+    right: 12.5%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    position: absolute;
   }
 
   .header-contact::after,
@@ -401,5 +438,133 @@
 
   .header-menu ul li a {
     letter-spacing: 5px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .container {
+    max-width: 740px;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .hero-text h6 {
+    font-size: 15px;
+    padding: 7px 0;
+  }
+
+  .logo img,
+  .brush-content .brush-logo img {
+    width: 130px;
+  }
+
+  .body-text {
+    padding: 50px 0;
+  }
+
+  .text-row {
+    padding: 0;
+  }
+
+  .services-box {
+    width: 48%;
+    margin-bottom: 2%;
+  }
+
+  .services-row {
+    justify-content: space-around;
+  }
+
+  .your-painting {
+    padding: 55px 45px;
+  }
+
+  .main-form-row .main-form {
+    padding-bottom: 0;
+    flex-wrap: wrap;
+  }
+
+  .main-form .form-tile {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .main-form-row .main-form input {
+    padding: 20px 17px;
+  }
+
+  .main-form-row textarea {
+    padding: 40px 17px;
+  }
+
+  .checkbox-row,
+  .main-form-row {
+    padding-bottom: 40px;
+  }
+
+  .checkbox-row ul li {
+    width: 30%;
+    text-align: center;
+  }
+
+  .gallery-section {
+    padding-top: 60px;
+  }
+
+  .gallery-section h3 {
+    font-size: 18px;
+  }
+
+  .gallery-text {
+    top: 12%;
+  }
+
+  .brush-img img {
+    width: 220px;
+  }
+
+  .brush-content .brush-text p,
+  .brush-content .brush-text p a {
+    font-size: 10px;
+  }
+
+  .brush-content .social-icon img {
+    padding: 23px 0 18px;
+  }
+
+  .footer-row {
+    padding-bottom: 145px;
+  }
+
+  .footer-contact img {
+    padding-bottom: 15px;
+  }
+
+  .footer-navbar {
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-section {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .footer-nav-left ul li {
+    padding: 0 15px;
+  }
+
+  .header-contact.active {
+    right: 30%;
+  }
+
+  .footer-row .footer-contact {
+    padding-top: 135px;
+  }
+
+  .header-contact img {
+    width: 35px;
   }
 }

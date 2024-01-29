@@ -479,6 +479,10 @@ header {
   color: #376689;
 }
 
+.gallery-text h2 br {
+  display: none;
+}
+
 .image-gallery .images {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
