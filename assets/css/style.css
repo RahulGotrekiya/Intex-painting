@@ -247,6 +247,18 @@ header {
   line-height: 1.5;
 }
 
+.services-box:hover img {
+  cursor: pointer;
+  transition: 0.5s;
+  filter: brightness(0.6);
+}
+
+.services-box:hover .services-text {
+  transition: 0.5s;
+  transform: translate(0, -57%);
+  cursor: pointer;
+}
+
 /* Your Painting */
 
 .painting-img img {
@@ -430,6 +442,7 @@ header {
   color: #193946;
   text-transform: uppercase;
   letter-spacing: 4px;
+  transition: 0.6s;
   cursor: pointer;
 }
 
