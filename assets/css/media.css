@@ -729,11 +729,6 @@
 
   .services-row {
     align-items: center;
-    flex-direction: column;
-  }
-
-  .services-box {
-    width: 100%;
   }
 
   .painting-text h3 {
@@ -849,6 +844,14 @@
 @media only screen and (max-width: 480px) {
   .container {
     max-width: 300px;
+  }
+
+  .services-row {
+    flex-direction: column;
+  }
+
+  .services-box {
+    width: 100%;
   }
 
   .header-contact {
